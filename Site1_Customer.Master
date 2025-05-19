@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1_Customer.master.cs" Inherits="badpj_integration_trial4.Site1_Customer" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="/Css/S1_Master.css" rel="stylesheet" />
+    <link href="/Css/S1_HomePage.css" rel="stylesheet" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="S4_AdminLogin.aspx">
+                        <img src="\Imgs\Nav\CF final logo 2.png" alt="Alternate Text" style="width: 70%; height: 70%;" /></a>
+                    <button class="navbar-toggler" type="button" style="margin-left: 80%;" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav-menu">
+                            <li class="nav-item">
+                                <a class="nav-link" href="S1_HomePage.aspx">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="S1_About.aspx">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="S1_Malls.aspx">Our Partners</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="S1_FAQ.aspx">FAQs</a>
+                            </li>
+                            <li class="nav-item partnership-button">
+                                <asp:Button Text="Partnership" runat="server" CssClass="nav-link custom-button" Style="background-color: darkblue; color: white;" OnClick="Unnamed1_Click" />
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="ftr-container">
+            <div class="fdb">
+                <img class="logo" src="/Imgs/Nav/CF final logo 2.png" alt="">
+                <div>
+                    <img src="https://raw.githubusercontent.com/arbiprog/casecraft/main/images/dribbble.png" alt="">
+                    <img src="https://raw.githubusercontent.com/arbiprog/casecraft/main/images/Instagram.png" alt="">
+                    <img src="https://raw.githubusercontent.com/arbiprog/casecraft/main/images/Twitter.png" alt="">
+                </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div>
+                <h2>CrowdFeed</h2>
+                <h5>Updates</h5>
+                <h5>Teams</h5>
+                <h5>Enterprise</h5>
+            </div>
+
+            <div>
+                <h2>Socials</h2>
+                <h5>Instagram</h5>
+                <h5>YouTube</h5>
+                <h5>FaceBook</h5>
+            </div>
+
+            <div>
+                <h2>About Us</h2>
+                <h5>ProSensors</h5>
+                <h5>Company</h5>
+                <h5>Careers</h5>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelector(".menu-icon").addEventListener("click", function () {
+            document.querySelector("header nav ul").classList.toggle("menu-active");
+        });
+
+    </script>
+</body>
+</html>
