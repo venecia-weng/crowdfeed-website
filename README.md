@@ -95,10 +95,6 @@ CrowdFeed/
 
 ## 📡 Sensor Technology
 
-<div align="center">
-  <img src="/api/placeholder/500/300" alt="Seat Sensor Technology" />
-</div>
-
 CrowdFeed leverages proprietary seat sensor technology that:
 - ✅ Accurately detects seat occupancy in real-time
 - 📊 Provides aggregated availability statistics
