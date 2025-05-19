@@ -162,14 +162,6 @@ CrowdFeed leverages proprietary seat sensor technology that:
 
 ---
 
-## 💼 Business Model
-
-CrowdFeed operates on a dual revenue stream:
-
-1. **Sensor Hardware Sales**: One-time purchase of seat sensor technology by mall partners
-2. **Subscription Service**: Ongoing service fees for the CrowdFeed platform with tiered pricing based on mall size and number of participating restaurants
-
----
 
 ## 🚀 Future Enhancements
 
